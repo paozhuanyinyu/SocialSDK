@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.caing.news.cn.caing.news.MainActivity">
+
+        <Button
+            android:id="@+id/bt_wechat_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信登录" />
+        <Button
+            android:id="@+id/bt_wechat_share_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信分享文本" />
+        <Button
+            android:id="@+id/bt_wechat_share_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信分享图片" />
+        <Button
+            android:id="@+id/bt_wechat_share_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信分享音乐" />
+
+        <Button
+            android:id="@+id/bt_wechat_share_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信分享视频" />
+        <Button
+            android:id="@+id/bt_wechat_share_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信分享链接" />
+
+
+
+
+        <Button
+            android:id="@+id/bt_weibo_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微博登录" />
+        <Button
+            android:id="@+id/bt_weibo_share_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微博分享文本" />
+        <Button
+            android:id="@+id/bt_weibo_share_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微博分享图片" />
+        <Button
+            android:id="@+id/bt_weibo_share_muti_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微博分享多张图片" />
+
+        <Button
+            android:id="@+id/bt_weibo_share_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微博分享视频" />
+
+
+        <Button
+            android:id="@+id/bt_qq_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QQ登录" />
+
+        <Button
+            android:id="@+id/bt_qq_share_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QQ分享图片" />
+
+        <Button
+            android:id="@+id/bt_qq_share_image_and_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="QQ分享图文" />
+    </LinearLayout>
+</ScrollView>
+

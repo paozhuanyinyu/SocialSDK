@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def QQ_APPID = properties.getProperty("QQ_APPID")
+def WECHAT_APPID = properties.getProperty("WECHAT_APPID")
+def WEIBO_APPKEY = properties.getProperty("WEIBO_APPKEY")
+def WEIBO_REDIRECT_URL = properties.getProperty("WEIBO_REDIRECT_URL")
+def WEIBO_SCOPE = properties.getProperty("WEIBO_SCOPE")
+def QQ_APP_ID = new StringBuilder().append("tencent").append(QQ_APPID.replaceAll("\"","")).toString()
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "QQ_APPID", QQ_APPID
+        buildConfigField "String", "WECHAT_APPID", WECHAT_APPID
+        buildConfigField "String", "WEIBO_APPKEY", WEIBO_APPKEY
+        buildConfigField "String", "WEIBO_REDIRECT_URL", WEIBO_REDIRECT_URL
+        buildConfigField "String", "WEIBO_SCOPE", WEIBO_SCOPE
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
+}
+
+
