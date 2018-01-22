@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SocialManager.getInstance().init(MainActivity.this,Constants.WECHAT_APPID,Constants.QQ_APPID,Constants.APP_KEY_WEIBO,Constants.REDIRECT_URL_WEIBO,Constants.SCOPE_WEIBO);
-//        SocialManager.getInstance().init(MainActivity.this);
+        SocialManager.getInstance().init(MainActivity.this);
         //微信登录
         Button bt_wechat_login = findViewById(R.id.bt_wechat_login);
         bt_wechat_login.setOnClickListener(this);

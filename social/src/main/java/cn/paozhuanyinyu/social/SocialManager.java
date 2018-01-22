@@ -75,14 +75,14 @@ public class SocialManager {
      * @param weiboRedirectUrl 微博回调地址
      * @param weiboScope 微博 scope
      */
-    public void init(Context context,String wechatAppId,String qqAppId,String weiboAppKey,String weiboRedirectUrl,String weiboScope){
-        this.wechatAppId = wechatAppId;
-        this.qqAppId = qqAppId;
-        this.weiboAppKey = weiboAppKey;
-        this.weiboRedirectUrl = weiboRedirectUrl;
-        this.weiboScope = weiboScope;
-        initWeibo(context);
-    }
+//    public void init(Context context,String wechatAppId,String qqAppId,String weiboAppKey,String weiboRedirectUrl,String weiboScope){
+//        this.wechatAppId = wechatAppId;
+//        this.qqAppId = qqAppId;
+//        this.weiboAppKey = weiboAppKey;
+//        this.weiboRedirectUrl = weiboRedirectUrl;
+//        this.weiboScope = weiboScope;
+//        initWeibo(context);
+//    }
 
     /**
      * 初始化方法，local.prpperties配置社交平台参数

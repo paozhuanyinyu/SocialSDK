@@ -13,9 +13,9 @@ import java.util.ArrayList;
  */
 
 public class Social {
-    public static void init(Context context,String wechatAppId,String qqAppId,String weiboAppKey,String weiboRedirectUrl,String weiboScope){
-        SocialManager.getInstance().init(context,wechatAppId,qqAppId,weiboAppKey,weiboRedirectUrl,weiboScope);
-    }
+//    public static void init(Context context,String wechatAppId,String qqAppId,String weiboAppKey,String weiboRedirectUrl,String weiboScope){
+//        SocialManager.getInstance().init(context,wechatAppId,qqAppId,weiboAppKey,weiboRedirectUrl,weiboScope);
+//    }
     public static void init(Context context){
         SocialManager.getInstance().init(context);
     }

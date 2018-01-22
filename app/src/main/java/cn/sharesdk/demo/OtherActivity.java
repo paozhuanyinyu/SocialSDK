@@ -31,8 +31,7 @@ public class OtherActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
-        Social.init(OtherActivity.this,Constants.WECHAT_APPID,Constants.QQ_APPID,Constants.APP_KEY_WEIBO,Constants.REDIRECT_URL_WEIBO,Constants.SCOPE_WEIBO);
-//        Social.init(OtherActivity.this);
+        Social.init(OtherActivity.this);
         //微信登录
         Button bt_wechat_login = findViewById(R.id.bt_wechat_login);
         bt_wechat_login.setOnClickListener(this);
